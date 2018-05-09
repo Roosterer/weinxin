@@ -4,14 +4,12 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import javax.servlet.ServletException;
-import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.util.Arrays;
 import java.util.Enumeration;
-import java.util.List;
 import java.util.Map;
 
 public class Subscribe extends HttpServlet {
@@ -35,22 +33,7 @@ public class Subscribe extends HttpServlet {
             String paraName=(String)enu.nextElement();
             System.out.println(paraName+": "+req.getParameter(paraName));
         }
-        //获取post参数
-//        ServletInputStream inputStream = req.getInputStream();
         StringBuilder sb = new StringBuilder("");
-//        BufferedReader reader = null;
-//        reader = new BufferedReader(new InputStreamReader(req.getInputStream(), "utf-8"));
-//        String line = null;
-//        while ((line = reader.readLine()) != null)
-//        {
-//            sb.append(line);
-//        }
-//        String xmltext = sb.toString();
-//        System.out.println("xmlParam：");
-//        System.out.println(xmltext);
-//        System.out.println("");
-
-        //  resp.setContentType("text/html");
         // 实际的逻辑是在这里
 
         System.out.println("服务器验证开始");
